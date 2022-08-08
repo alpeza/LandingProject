@@ -20,7 +20,7 @@ export default function Navbar() {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                  <a className="flex items-center space-x-2 text-2xl font-medium text-tcb6 dark:text-tca1">
                     <span>
                       <img
                         src="/img/logo.svg"
@@ -36,7 +36,7 @@ export default function Navbar() {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-tcb4 focus:outline-none dark:text-gray-300 dark:focus:bg-tcc9">
+                  className="px-2 py-1 ml-auto text-tca20 rounded-md lg:hidden hover:text-tcb6 focus:text-tcb6 focus:bg-tcb4 focus:outline-none dark:text-gray-300 dark:focus:bg-tcc9">
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ export default function Navbar() {
                   <>
                     {navigation.map((item, index) => (
                       <Link key={index} href="/">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-tcb4 dark:focus:bg-tca3 focus:outline-none dark:focus:bg-tcc9">
+                        <a className="w-full px-4 py-2 -ml-4 text-tca20 rounded-md dark:text-gray-300 hover:text-tcb6 focus:text-tcb6 focus:bg-tcb4 dark:focus:bg-tca3 focus:outline-none dark:focus:bg-tcc9">
                           {item}
                         </a>
                       </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href="/">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-tcb4 focus:outline-none dark:focus:bg-tca3">
+                  <a className="inline-block px-4 py-2 text-lg font-normal text-tca3 no-underline rounded-md dark:text-gray-200 hover:text-tcb6 focus:text-tcb6 focus:bg-tcb4 focus:outline-none dark:focus:bg-tca3">
                     {menu}
                   </a>
                 </Link>

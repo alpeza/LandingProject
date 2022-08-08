@@ -9,3 +9,14 @@ bg-tcb8;bg-indigo-900
 bg-tcc9;bg-trueGray-700
 bg-tcc10;bg-trueGray-800
 bg-tcc11;bg-trueGray-900
+text-tca1;text-gray-100
+text-tca2;text-gray-50
+text-tca3;text-gray-800
+text-tcb4;text-indigo-100
+text-tcb5;text-indigo-300
+text-tcb6;text-indigo-500
+text-tcb7;text-indigo-600
+text-tcb8;text-indigo-900
+text-tcc9;text-trueGray-700
+text-tcc10;text-trueGray-800
+text-tcc11;text-trueGray-900
