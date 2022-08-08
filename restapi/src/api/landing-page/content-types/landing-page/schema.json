@@ -35,6 +35,67 @@
         }
       },
       "component": "landing-assets.section"
+    },
+    "Section2": {
+      "displayName": "CardRightText",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-assets.card-right-text"
+    },
+    "Section3": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-assets.card-left-text"
+    },
+    "Section4": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-assets.card-video"
+    },
+    "Section5": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-assets.testimonial"
+    },
+    "Section6": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-assets.acordeon-card"
+    },
+    "Section7": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-assets.button-banner"
     }
   }
 }

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Container from "./container";
 import { getStrapiURL } from "../lib/api";
+import { Parallax } from 'react-scroll-parallax';
+
 
 export default function Hero(props) {
   const herourl = getStrapiURL(props.content.Image.data[0].attributes.url)
@@ -9,9 +11,13 @@ export default function Hero(props) {
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
+            <Parallax speed={1}>
+            
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               {props.content.Title}
             </h1>
+           
+            </Parallax>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
             {props.content.Subtitle}
             </p>
@@ -47,15 +53,17 @@ export default function Hero(props) {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
-            <Image
-              src={herourl}
-              width={props.content.Image.data[0].attributes.width}
-              height={props.content.Image.data[0].attributes.height}
-              alt="Hero Illustration"
-              layout="intrinsic"
-              loading="eager"
-              //placeholder="blur"
-            />
+            <Parallax speed={-5}>
+              <Image
+                src={herourl}
+                width={props.content.Image.data[0].attributes.width}
+                height={props.content.Image.data[0].attributes.height}
+                alt="Hero Illustration"
+                layout="intrinsic"
+                loading="eager"
+                //placeholder="blur"
+              />
+            </Parallax>
           </div>
         </div>
       </Container>

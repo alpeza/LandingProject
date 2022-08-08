@@ -3,7 +3,6 @@ import Hero from "./hero";
 import Navbar from "./navbar";
 import SectionTitle from "./sectionTitle";
 
-import { benefitOne, benefitTwo } from "./data";
 import Video from "./video";
 import Benefits from "./benefits";
 import Footer from "./footer";
@@ -11,11 +10,14 @@ import Testimonials from "./testimonials";
 import Cta from "./cta";
 import Faq from "./faq";
 import PopupWidget from "./popupWidget";
+import { Benefit } from "./benefit";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function LandingPage(props) {
     console.log(props)
   return (
     <>
+      <ParallaxProvider>
       <Head>
         <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
         <meta
@@ -31,31 +33,30 @@ function LandingPage(props) {
         title={props.data.Section1.Title}>
         {props.data.Section1.Subtitle}
       </SectionTitle>
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+
+      <Benefits data={Benefit(props.data.Section2)} />
+      <Benefits imgPos="right" data={Benefit(props.data.Section3)} />
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don't forget to add one. Just like this.
+        pretitle={props.data.Section4.Head}
+        title={props.data.Section4.Title}>
+        {props.data.Section4.Text}
       </SectionTitle>
-      <Video />
+     
+      <Video content={props.data.Section4} />
       <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        pretitle={props.data.Section5.Title.Head}
+        title={props.data.Section5.Title.Title}>
+        {props.data.Section5.Title.Text}
       </SectionTitle>
-      <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+      <Testimonials content={props.data.Section5.Testimonials} />
+      <SectionTitle pretitle={props.data.Section6.Header.Head} title={props.data.Section6.Header.Title}>
+      {props.data.Section6.Header.Text}
       </SectionTitle>
-      <Faq />
-      <Cta />
+      <Faq content={props.data.Section6.Acordeon} />
+      <Cta content={props.data.Section7} />
       <Footer />
       <PopupWidget />
+      </ParallaxProvider>
     </>
   );
 }
