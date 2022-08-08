@@ -53,7 +53,7 @@ export default function Hero(props) {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
-            <Parallax speed={-5}>
+            <Parallax speed={-8}>
               <Image
                 src={herourl}
                 width={props.content.Image.data[0].attributes.width}
