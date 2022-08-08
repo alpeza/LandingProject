@@ -13,12 +13,12 @@ export default function Hero(props) {
           <div className="max-w-2xl mb-8">
             <Parallax speed={1}>
             
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+            <h1 className="text-4xl font-bold leading-snug tracking-tight text-tca3 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               {props.content.Title}
             </h1>
            
             </Parallax>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            <p className="py-5 text-xl leading-normal text-tca20 lg:text-xl xl:text-2xl dark:text-gray-300">
             {props.content.Subtitle}
             </p>
 
@@ -27,14 +27,14 @@ export default function Hero(props) {
                 href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-tcb7 rounded-md ">
                 {props.content.LBText}
               </a>
               <a
                 href="https://github.com/web3templates/nextly-template/"
                 target="_blank"
                 rel="noopener"
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
+                className="flex items-center space-x-2 text-tca20 dark:text-gray-400">
                 <svg
                   role="img"
                   width="24"
