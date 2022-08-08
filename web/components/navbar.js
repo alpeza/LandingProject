@@ -36,7 +36,7 @@ export default function Navbar() {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-tcb4 focus:outline-none dark:text-gray-300 dark:focus:bg-tcc9">
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,13 +61,13 @@ export default function Navbar() {
                   <>
                     {navigation.map((item, index) => (
                       <Link key={index} href="/">
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-tcb4 dark:focus:bg-tca3 focus:outline-none dark:focus:bg-tcc9">
                           {item}
                         </a>
                       </Link>
                     ))}
                     <Link href="/">
-                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+                      <a className="w-full px-6 py-2 mt-3 text-center text-white bg-tcb7 rounded-md lg:ml-5">
                         Get Started
                       </a>
                     </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href="/">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-tcb4 focus:outline-none dark:focus:bg-tca3">
                     {menu}
                   </a>
                 </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link href="/">
-            <a className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+            <a className="px-6 py-2 text-white bg-tcb7 rounded-md md:ml-5">
               Get Started
             </a>
           </Link>

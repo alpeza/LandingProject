@@ -17,7 +17,7 @@ export default function Testimonials(p) {
       {p.content.map(function(c, i){
         return (
                   <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full h-full bg-tca1 px-14 rounded-2xl py-14 dark:bg-tcc10">
             <p className="text-2xl leading-normal ">
               {c.Text}
             </p>
@@ -62,7 +62,7 @@ function Mark(props) {
   return (
     <>
       {" "}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
+      <mark className="text-indigo-800 bg-tcb4 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-tcb8 dark:text-indigo-200">
         {props.children}
       </mark>{" "}
     </>

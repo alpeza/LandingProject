@@ -4,11 +4,11 @@ target_files="/Users/alvaroperis/ArchLab/landingweb/LandingProject/web/component
 p="/Users/alvaroperis/ArchLab/landingweb/LandingProject/web/components/"
 while IFS=";" read -r c1 c2 
 do
-    echo "- Reemplazando $c1 por $c2"
+    echo "- Reemplazando $c2 por $c1"
     for f in $target_files
     do
     echo "     |_ Processing $f file..."
-    sed -i'.bck'  's/'"$c1"'/'"$c2"'/g' $f
+    sed -i'.bck'  's/'"$c2"'/'"$c1"'/g' $f
     rm "$f.bck"
     done
 done < matix.csv
