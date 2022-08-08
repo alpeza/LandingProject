@@ -2,7 +2,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  mode: "jit",
+  mode: "watch",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -19,7 +19,7 @@ module.exports = {
         'tcb8':'#134e4a',
         'tcc9':'#404040',
         'tcc10':'#262626',
-        'tcc11':'#171717'
+        'tcc11':'#171717',
       },
     },
     fontFamily: {
