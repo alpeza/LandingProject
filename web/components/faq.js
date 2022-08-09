@@ -3,9 +3,10 @@ import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 
-var faqdata = [];
+
 
 export default function Faq(props) {
+  var faqdata = [];
   for (let i = 0; i < props.content.length; i++) {
     faqdata.push( {
       question: props.content[i].Title,
