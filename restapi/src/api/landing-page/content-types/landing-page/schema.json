@@ -96,6 +96,16 @@
         }
       },
       "component": "landing-assets.button-banner"
+    },
+    "Navbar": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-assets.navbar"
     }
   }
 }

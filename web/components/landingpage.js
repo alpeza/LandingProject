@@ -26,7 +26,7 @@ function LandingPage(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar content={props.data.Navbar}/>
       <Hero content={props.data.Hero} />
       <SectionTitle
         pretitle= {props.data.Section1.Header}
